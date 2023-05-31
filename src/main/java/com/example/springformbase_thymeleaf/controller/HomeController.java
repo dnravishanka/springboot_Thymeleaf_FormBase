@@ -11,4 +11,16 @@ public class HomeController {
     public String homepage() {
         return "index";
     }
+
+    @GetMapping("admi")
+    public String adminpage() {
+        return "admin/index";
+    }
+    @GetMapping("manage")
+    public String mangementPage() {
+        return "management/index";
+    } @GetMapping("use")
+    public String userpage() {
+        return "user/index";
+    }
 }

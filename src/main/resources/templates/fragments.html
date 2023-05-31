@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="headFiles">
+    <meta charset="UTF-8">
+    <title>Home page</title>
+        <link rel="stylesheet" th:href="@{/bootstrap/css/bootstrap.min.css}">
+
+<!--    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">-->
+    <style type="text/css">
+        .poshead{
+            color: white;
+            font-size: 30px;
+
+        }
+        #sidebar{
+            background-color: #17a2b8;
+            height: 100%;
+        }
+        .sidehover:hover{
+            background-color: #117a8b;
+
+        }
+        .sidehover{
+            text-align: match-parent;
+
+        }
+        .sidehover:active{
+            background-color: white;
+
+        }
+        .sidehover:link{
+            background-color: #0b2e13;
+        }
+        #head{
+            height: 50px;
+        }
+        #table{
+            background-color: #80bdff;
+        }
+        #tablehead{
+            background-color: #b3b7bb;
+        }
+        .clearbtn{
+            background-color: #721c24;
+            color: white;
+        }
+        .dash{
+            color:black;
+        }
+        #addbtn{
+            width: 100px;
+            background-color: #005cbf;
+            color: white;
+        }
+        #btnupdate{
+            width: 100px;
+            background-color:#17a2b8;
+            color: white;
+        }
+        #btndelete{
+            width: 100px;
+            background-color:#721c24;
+            color: white;
+        }
+        #btnrefresh{
+            width: 100px;
+            background-color: #005cbf;
+            color: white;
+        }
+        a{
+            text-decoration: none!important;
+        }
+        a:active{
+            color: white;
+        }
+        #dash:active{
+            background-color: white;
+        }
+        #conte{
+            background-color: #6c757d;
+            text-align: center;
+        }
+        .nav-item:hover{
+            background-color: #80bdff;
+        }
+
+    </style>
+</head>
+<body>
+<div class="row" th:fragment="headerBar">
+    <div class="col-md-2"></div>
+    <div class="col-md-2"></div>
+    <div class="col-md-4"><h3 style="color: #0c63e4; ">  CEment Workers</h3> </div>
+    <div class="col-md-2"></div>
+    <div class="col-md-2"></div>
+</div>
+<div style="height: 50px;background-color: #6c757d" th:fragment="paddingBar">
+
+</div>
+<div class="row" th:fragment="navbar">
+    <div class="col-md-8"></div>
+    <div class="col-md-4">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+
+<!--            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--                <span class="navbar-toggler-icon"></span>-->
+<!--            </button>-->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a class="nav-link" th:href="@{/home}">HOME</A> </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" th:href="@{/admi}">ADMIN</a>
+                    </li> <li class="nav-item">
+                    <li class="nav-item">
+                        <a class="nav-link" th:href="@{/manage}">MANAGEMENT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" th:href="@{/use}">USER</a>
+                    </li> <li class="nav-item">
+
+                    <button type="button" class="btn btn-primary btn-sm">L O G I N</button>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+</div>
+<div style="background-color: gainsboro" th:fragment="sideNavebar">
+
+    <div class="row sidehover">
+        <div class="col-md-12">
+            <a href="index.html"><h4 class="dash">CUSTOMER</h4></a>
+        </div>
+    </div>
+    <div class="row" style="height: 30px">
+
+
+    </div>
+    <div class="row sidehover" >
+        <div class="col-md-12">
+            <a href="customerform.html"><h4 class="dash">SUPPLIERS</h4></a>
+        </div>
+    </div>
+    <div class="row" style="height: 30px">
+
+
+    </div>
+    <div class="row sidehover">
+        <div class="col-md-12">
+            <a href="itemForm.html"><h4 class="dash">ITEM</h4></a>
+        </div>
+    </div>
+    <div class="row" style="height: 30px">
+
+
+    </div>
+    <div class="row sidehover">
+        <div class="col-md-12">
+            <a href="OrderForm.html"><h4 class="dash">ORDER</h4></a>
+        </div>
+    </div>
+    <div class="row" style="height:30px">
+
+
+    </div>
+    <div class="row sidehover">
+        <div class="col-md-12">
+            <a href="viewReport.html"><h4 class="dash">VIEW REPORT</h4></a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

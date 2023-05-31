@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+<head th:insert="fragments.html::headFiles">
+
 </head>
 <body>
-<h2 th:fragment="">Hello index page</h2>
+<div class="container">
+    <div class="row" th:replace="fragments.html::headerBar"></div>
+    <div class="row" th:replace="fragments.html::paddingBar"></div>
+    <div class="row" th:replace="fragments.html::navbar"></div>
+    <div class="row">
+        <div class="col-md-2" th:insert="fragments.html::sideNavebar"></div>
+        <div class="col-md-10" id="conte"> <h1 id="hello"> HOME</h1></div>
+    </div>
+
+</div>
+
 </body>
 </html>
