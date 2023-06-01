@@ -10,7 +10,57 @@
     <div class="row" th:replace="fragments.html::navbar"></div>
     <div class="row">
         <div class="col-md-2" th:insert="fragments.html::sideNavebar"></div>
-        <div class="col-md-10" id="conte"> <h1 id="hello"> HOME</h1></div>
+
+<!--        content-->
+        <div class="col-md-10" >
+            <div class="row">
+                <div class="col-md-1">
+
+                </div>
+                <div th:fragment="content">
+                    <main role="main">
+
+                        <!-- Main jumbotron for a primary marketing message or call to action -->
+                        <div class="row" style="height: 15px"></div>
+                        <div class="jumbotron">
+                            <div class="container">
+                                <h1 class="display-2"><b style="">SAMAN CEMENT WORKERS</b></h1>
+                                <p>WE PROVIDE BEST QUALITY PRODUCTS FOR NATION </p>
+                                <p><a class="btn btn-primary btn-lg" href="#" role="button">About Us »</a></p>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <!-- Example row of columns -->
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h3>OUR VISION</h3>
+                                    <p>PROVIDE BEST QUALITY PRODUCTS FOR NATION <br><img th:src="@{/bootstrap/images/images (1).jpg}" height="178"
+                                                                                         width="267"/></p>
+                                    <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+                                </div>
+                                <div class="col-md-4">
+                                    <h3>OUR WORK PLACE</h3>
+                                    <p>MORE THAN 5 ACRES <BR>75 EMPLOES <BR><img th:src="@{/bootstrap/images/300px-Concrete_Batch_Plant_.jpg}" height="180" width="240"/></p>
+                                    <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+                                </div>
+                                <div class="col-md-4">
+                                    <h3>OUR PRODUCTS</h3>
+                                    <p>MORE THAN <br>35 PRODUCTS <br><img th:src="@{/bootstrap/images/153656392520180910.jpg}" height="180"
+                                                                          width="271"/>
+                                    </p>
+                                    <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                        </div> <!-- /container -->
+
+                    </main>
+                </div>
+                <div class="col-md-1"></div>
+        </div>
     </div>
 
 </div>

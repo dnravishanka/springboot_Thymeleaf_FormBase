@@ -83,6 +83,12 @@
         .nav-item:hover{
             background-color: #80bdff;
         }
+        #id{
+            height: 80%;
+        }
+        .nav-link:enabled{
+            background-color: #1e2125;
+        }
 
     </style>
 </head>
@@ -118,7 +124,8 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" th:href="@{/use}">USER</a>
-                    </li> <li class="nav-item">
+                    </li>
+
 
                     <button type="button" class="btn btn-primary btn-sm">L O G I N</button>
                     </li>
@@ -130,7 +137,9 @@
 
 
 </div>
-<div style="background-color: gainsboro" th:fragment="sideNavebar">
+<!--side nav bar are fragment-->
+
+<div  style="background-color: gainsboro" th:fragment="sideNavebar">
 
     <div class="row sidehover">
         <div class="col-md-12">
@@ -173,6 +182,60 @@
             <a href="viewReport.html"><h4 class="dash">VIEW REPORT</h4></a>
         </div>
     </div>
+</div>
+<!--content area-->
+<div class="col-md-10">
+
+    <div class="row">
+        <div class="col-md-1">
+
+        </div>
+        <div th:fragment="content">
+            <main role="main">
+
+                <!-- Main jumbotron for a primary marketing message or call to action -->
+                <div class="row" style="height: 15px"></div>
+                <div class="jumbotron">
+                    <div class="container">
+                        <h1 class="display-2"><b style="">SAMAN CEMENT WORKERS</b></h1>
+                        <p>WE PROVIDE BEST QUALITY PRODUCTS FOR NATION </p>
+                        <p><a class="btn btn-primary btn-lg" href="#" role="button">About Us »</a></p>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <!-- Example row of columns -->
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h3>OUR VISION</h3>
+                            <p>PROVIDE BEST QUALITY PRODUCTS FOR NATION <br><img src="images/images (1).jpg" height="178"
+                                                                                 width="267"/></p>
+                            <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+                        </div>
+                        <div class="col-md-4">
+                            <h3>OUR WORK PLACE</h3>
+                            <p>MORE THAN 5 ACRES <BR>75 EMPLOES <BR><img src="images/300px-Concrete_Batch_Plant_.jpg" height="180" width="240"/></p>
+                            <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+                        </div>
+                        <div class="col-md-4">
+                            <h3>OUR PRODUCTS</h3>
+                            <p>MORE THAN <br>35 PRODUCTS <br><img src="images/153656392520180910.jpg" height="180"
+                                                                  width="271"/>
+                            </p>
+                            <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                </div> <!-- /container -->
+
+            </main>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+
+</div>
 </div>
 </body>
 </html>
