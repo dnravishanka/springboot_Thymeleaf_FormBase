@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Home page</title>
         <link rel="stylesheet" th:href="@{/bootstrap/css/bootstrap.min.css}">
+    <script th:src="@{/bootstrap/js/bootstrap.min.js}"></script>
+
 
 <!--    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">-->
     <style type="text/css">
@@ -89,6 +91,25 @@
         .nav-link:enabled{
             background-color: #1e2125;
         }
+        .btn:hover{
+            background-color: #bcbebf;
+        }
+
+        #btnAd{
+        color: green;
+        }
+        #btndel{
+            color: red;
+        }
+        #btnup{
+            color: blue;
+        }
+        #btnRe{
+            background-color: gray;
+        }
+        .btnx:hover{
+            background-color: #0dcaf0;
+        }
 
     </style>
 </head>
@@ -139,50 +160,57 @@
 </div>
 <!--side nav bar are fragment-->
 
-<div  style="background-color: gainsboro" th:fragment="sideNavebar">
+<div  th:fragment="sideNavebar">
 
-    <div class="row sidehover">
+    <div class="row">
         <div class="col-md-12">
-            <a href="index.html"><h4 class="dash">CUSTOMER</h4></a>
+            <a href="" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">CUSTOMER</a>
         </div>
     </div>
     <div class="row" style="height: 30px">
 
 
     </div>
-    <div class="row sidehover" >
+    <div class="row " >
         <div class="col-md-12">
-            <a href="customerform.html"><h4 class="dash">SUPPLIERS</h4></a>
+            <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">PRODUCTS</a>
         </div>
     </div>
     <div class="row" style="height: 30px">
 
 
     </div>
-    <div class="row sidehover">
+    <div class="row">
         <div class="col-md-12">
-            <a href="itemForm.html"><h4 class="dash">ITEM</h4></a>
+            <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">ORDER</a>
         </div>
     </div>
     <div class="row" style="height: 30px">
 
 
     </div>
-    <div class="row sidehover">
+    <div class="row">
         <div class="col-md-12">
-            <a href="OrderForm.html"><h4 class="dash">ORDER</h4></a>
+            <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">SUPPLIERS</a>
         </div>
     </div>
     <div class="row" style="height:30px">
 
 
     </div>
-    <div class="row sidehover">
+    <div class="row">
         <div class="col-md-12">
-            <a href="viewReport.html"><h4 class="dash">VIEW REPORT</h4></a>
+            <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">EMPLOYS</a>
         </div>
     </div>
 </div>
+<div class="row">
+        <div class="col-md-12">
+            <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">REPORTS</a>
+        </div>
+    </div>
+</div>
+
 <!--content area-->
 <div class="col-md-10">
 

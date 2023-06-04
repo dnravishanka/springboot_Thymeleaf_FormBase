@@ -4,71 +4,14 @@
 
 </head>
 <body>
-<div class="row" id="head" style="background-color: #117a8b">
-    <div class="col-md-1"></div>
-    <div class="col-md-3">
-        <h3 class="poshead" style="padding-top: 10px">POS</h3>
-    </div>
-    <div class="col-md-1"></div>
-    <div class="col-md-7" >
-        <h4 style="padding-top: 10px; color: #fbfcfc">  CUSTOMER FORM</h4>
-    </div>
-</div>
-<!--side bar-->
-<div class="row" >
-
-    <div class="col-md-2" id="sidebar">
-        <div class="row" style="height: 30px">
-
-
-        </div>
-        <div class="row sidehover">
-            <div class="col-md-12">
-                <a href="customer.html"><h4 class="dash">HOME</h4></a>
-            </div>
-        </div>
-        <div class="row" style="height: 30px">
-
-
-        </div>
-        <div class="row sidehover" >
-            <div class="col-md-12">
-                <a href="customerform.html"><h4 class="dash">CUSTOMER</h4></a>
-            </div>
-        </div>
-        <div class="row" style="height: 30px">
-
-
-        </div>
-        <div class="row sidehover">
-            <div class="col-md-12">
-                <a href="itemForm.html"><h4 class="dash">ITEM</h4></a>
-            </div>
-        </div>
-        <div class="row" style="height: 30px">
-
-
-        </div>
-        <div class="row sidehover">
-            <div class="col-md-12">
-                <a href="OrderForm.html"><h4 class="dash">ORDER</h4></a>
-            </div>
-        </div>
-        <div class="row" style="height:30px">
-
-
-        </div>
-        <div class="row sidehover">
-            <div class="col-md-12">
-                <a href="viewReport.html"><h4 class="dash">VIEW REPORT</h4></a>
-            </div>
-        </div>
-        <div class="row" style="height:360px">
-
-
-        </div>
-    </div>
-    <div class="col-md-10">
+<div class="container">
+<div class="row" th:replace="fragments.html::headerBar"></div>
+<div class="row" th:replace="fragments.html::paddingBar"></div>
+<div class="row" th:replace="fragments.html::navbar"></div>
+<div class="row">
+    <div class="col-md-2" th:insert="fragments.html::sideNavebar"></div>
+<!--    content here-->
+    <div class="col-md-10" >
         <div class="row">
             <div class="col-md-1" id="spaceform1"></div>
             <div class="col-md-10">
@@ -76,6 +19,7 @@
                     <div class="form-group">
                         <label for="formGroupExampleInput">Customer Id</label>
                         <input type="text" class="form-control" id="formGroupExampleInput" >
+
                     </div>
                     <div class="form-group">
                         <label for="formGroupExampleInput2">Customer Name</label>
@@ -104,6 +48,7 @@
                 <button type="button" class="btn btn-secondary btn-sm" id="btnupdate">UPDATE</button>
                 <button type="button" class="btn btn-primary btn-sm" id="btndelete">DELETE</button>
                 <button type="button" class="btn btn-secondary btn-sm" id="btnrefresh">REFRESH</button>
+
             </div>
             <div class="col-md-1"></div>
         </div>
@@ -149,8 +94,9 @@
             <div class="col-md-1"></div>
 
         </div>
-
     </div>
+
+</div>
 
 </div>
 

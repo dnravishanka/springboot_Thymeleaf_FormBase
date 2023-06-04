@@ -7,8 +7,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/customer")
 public class CustController {
-    @GetMapping("/home")
-    public String customerPage() {
-        return "other/customer";
+    @GetMapping("admin/customer")
+    public String adminCustomerPage() {
+        return "admin/customer";
+    }
+
+    @GetMapping("manage/customer")
+    public String manageCustomerPage() {
+        return "management/customer";
+    }
+
+    @GetMapping("user/customer")
+    public String employCustomerPage() {
+        return "user/customer";
     }
 }
